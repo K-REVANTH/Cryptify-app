@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cryptify"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:gravity="center" />
+
+    <!-- Input Text Box with Border and Padding -->
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to encrypt"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border"
+        android:paddingLeft="16dp" /> <!-- Padding to move text to the right -->
+
+    <!-- Encrypt Button -->
+    <Button
+        android:id="@+id/encryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Encrypted Text Box with Border and Padding -->
+    <EditText
+        android:id="@+id/encryptedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Encrypted text will appear here"
+        android:inputType="none"
+        android:lines="5"
+        android:layout_marginBottom="16dp"
+        android:focusable="false"
+        android:background="@drawable/border"
+        android:paddingLeft="16dp" /> <!-- Padding to move text to the right -->
+
+    <!-- Decrypt Button -->
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Decrypted Text Box with Border and Padding -->
+    <EditText
+        android:id="@+id/decryptedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Decrypted text will appear here"
+        android:inputType="none"
+        android:lines="5"
+        android:focusable="false"
+        android:background="@drawable/border"
+        android:paddingLeft="16dp" /> <!-- Padding to move text to the right -->
+
+</LinearLayout>
